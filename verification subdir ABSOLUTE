@@ -1,0 +1,8 @@
+# Verification subdirectory
+# Specify correct absolute path to the model file
+import os
+model_file = '/kaggle/working/my_model.h5'  # Replace with your model file name
+if os.path.isfile(model_file):
+    print(f"The model file '{model_file}' exists in the current directory.")
+else:
+    print(f"The model file '{model_file}' does not exist in the current directory.")
