@@ -1,0 +1,8 @@
+# Save model to a specific directory
+# Define the directory path 
+save_directory = '/kaggle/working/'
+
+# Save trained model to specified directory
+model.save(save_directory + 'my_model.h5')
+
+model
