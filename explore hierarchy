@@ -1,0 +1,14 @@
+# Found directory by search (unknow but suspected ubication)
+# Explore directory hierarchy & locate file
+import os
+
+# Specify the root directory to start searching
+root_directory = '/kaggle/working/'
+
+# Define the target file name
+target_file_name = 'my_model.h5'
+
+# Recursively search for the file in the directory hierarchy
+for root, dirs, files in os.walk(root_directory):
+    if target_file_name in files:
+        print(f"Found '{target_file_name}' at: {os.path.join(root, target_file_name)}")
