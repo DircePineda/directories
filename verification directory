@@ -1,0 +1,7 @@
+# Model file verification in current directory
+import os
+model_file = 'my_model.h5'
+if os.path.isfile(model_file):
+    print(f"The model file '{model_file}' exists in the current directory.")
+else:
+    print(f"The model file '{model_file}' does not exist in the current directory.")
